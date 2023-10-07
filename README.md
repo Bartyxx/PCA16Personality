@@ -24,44 +24,44 @@
 
 <table>
 <caption>Explenation of the personality type</caption>
-<tr><td><b>Personality</b></td><td><b>Type</b></td></tr>
-<tr><td>ESTJ</td><td>The Supervisor</td></tr>
-<tr><td>ENTJ</td><td>The Commander </td></tr>
-<tr><td>ESFJ</td><td>The Provider  </td></tr>
-<tr><td>ENFJ</td><td>The Giver     </td></tr>
-<tr><td>ISTJ</td><td>The Inspector </td></tr>
-<tr><td>ISFJ</td><td>The Nurturer  </td></tr>
-<tr><td>INTJ</td><td>The Mastermind</td></tr>
-<tr><td>INFJ</td><td>The Counselor </td></tr>
-<tr><td>ESTP</td><td>The Doer      </td></tr>
-<tr><td>ESFP</td><td>The Performer </td></tr>
-<tr><td>ENTP</td><td>The Visionary </td></tr>
-<tr><td>ENFP</td><td>The Champion  </td></tr>
-<tr><td>ISTP</td><td>The Craftsman </td></tr>
-<tr><td>ISFP</td><td>The Composer  </td></tr>
-<tr><td>INTP</td><td>The Thinker   </td></tr>
-<tr><td>INFP</td><td>The Idealist  </td></tr>
+<tr><td><b>Personality</b></td><td><b>Type</b>    </td></tr>
+<tr><td>ESTJ               </td><td>The Supervisor</td></tr>
+<tr><td>ENTJ               </td><td>The Commander </td></tr>
+<tr><td>ESFJ               </td><td>The Provider  </td></tr>
+<tr><td>ENFJ               </td><td>The Giver     </td></tr>
+<tr><td>ISTJ               </td><td>The Inspector </td></tr>
+<tr><td>ISFJ               </td><td>The Nurturer  </td></tr>
+<tr><td>INTJ               </td><td>The Mastermind</td></tr>
+<tr><td>INFJ               </td><td>The Counselor </td></tr>
+<tr><td>ESTP               </td><td>The Doer      </td></tr>
+<tr><td>ESFP               </td><td>The Performer </td></tr>
+<tr><td>ENTP               </td><td>The Visionary </td></tr>
+<tr><td>ENFP               </td><td>The Champion  </td></tr>
+<tr><td>ISTP               </td><td>The Craftsman </td></tr>
+<tr><td>ISFP               </td><td>The Composer  </td></tr>
+<tr><td>INTP               </td><td>The Thinker   </td></tr>
+<tr><td>INFP               </td><td>The Idealist  </td></tr>
 </table>
 
 
 
 <table>
 <caption>Mapping in the dataset</caption>
-  <tr><td><b>Number in the code</b></td><td><b>Corresponding personality</b></td></tr>
-<tr><td>0</td><td>ESTJ</td></tr>
-<tr><td>1</td><td>ENTJ</td></tr>
-<tr><td>2</td><td>ESFJ</td></tr>
-<tr><td>3</td><td>ENFJ</td></tr>
-<tr><td>4</td><td>ISTJ</td></tr>
-<tr><td>5</td><td>ISFJ</td></tr>
-<tr><td>6</td><td>INTJ</td></tr>
-<tr><td>7</td><td>INFJ</td></tr>
-<tr><td>8</td><td>ESTP</td></tr>
-<tr><td>9</td><td>ESFP</td></tr>
-<tr><td>10</td><td>ENTP</td></tr>
-<tr><td>11</td><td>ENFP</td></tr>
-<tr><td>12</td><td>ISTP</td></tr>
-<tr><td>13</td><td>ISFP</td></tr>
-<tr><td>14</td><td>INTP</td></tr>
-<tr><td>15</td><td>INFP</td></tr>
+<tr><td><b>Number in the code</b></td><td><b>Corresponding personality</b></td></tr>
+<tr><td>0                        </td><td>ESTJ                            </td></tr>
+<tr><td>1                        </td><td>ENTJ                            </td></tr>
+<tr><td>2                        </td><td>ESFJ                            </td></tr>
+<tr><td>3                        </td><td>ENFJ                            </td></tr>
+<tr><td>4                        </td><td>ISTJ                            </td></tr>
+<tr><td>5                        </td><td>ISFJ                            </td></tr>
+<tr><td>6                        </td><td>INTJ                            </td></tr>
+<tr><td>7                        </td><td>INFJ                            </td></tr>
+<tr><td>8                        </td><td>ESTP                            </td></tr>
+<tr><td>9                        </td><td>ESFP                            </td></tr>
+<tr><td>10                       </td><td>ENTP                            </td></tr>
+<tr><td>11                       </td><td>ENFP                            </td></tr>
+<tr><td>12                       </td><td>ISTP                            </td></tr>
+<tr><td>13                       </td><td>ISFP                            </td></tr>
+<tr><td>14                       </td><td>INTP                            </td></tr>
+<tr><td>15                       </td><td>INFP                            </td></tr>
 </table>
