@@ -1,5 +1,6 @@
-Columns with more than 50000 zeros.
+
 <table>
+<caption>Columns with more than 50000 zeros.</caption>
 <tr><td>Name of the colum</td> <td>Number of Zeros</td></tr>
 <tr><td>You regularly make new friends.                                                                             </td><td>51981</td></tr>
 <tr><td>You spend a lot of your free time exploring various random topics that pique your interest                  </td><td>52021</td></tr>
@@ -23,11 +24,11 @@ Columns with more than 50000 zeros.
 
 <table>
 <tr><td>ESTJ</td><td>The Supervisor</td></tr>
-<tr><td>ENTJ</td><td>The Commander </td> </tr>
-<tr><td>ESFJ</td><td>The Provider  </td> </tr>
+<tr><td>ENTJ</td><td>The Commander </td></tr>
+<tr><td>ESFJ</td><td>The Provider  </td></tr>
 <tr><td>ENFJ</td><td>The Giver     </td></tr>
 <tr><td>ISTJ</td><td>The Inspector </td></tr>
-<tr><td>ISFJ</td><td>The Nurturer  </td> </tr>
+<tr><td>ISFJ</td><td>The Nurturer  </td></tr>
 <tr><td>INTJ</td><td>The Mastermind</td></tr>
 <tr><td>INFJ</td><td>The Counselor </td></tr>
 <tr><td>ESTP</td><td>The Doer      </td></tr>
@@ -41,22 +42,23 @@ Columns with more than 50000 zeros.
 </table>
 
 
-Mapping followed in the dataset
+
 <table>
-0	ESTJ
-1	ENTJ
-2	ESFJ
-3	ENFJ
-4	ISTJ
-5	ISFJ
-6	INTJ
-7	INFJ
-8	ESTP
-9	ESFP
-10	ENTP
-11	ENFP
-12	ISTP
-13	ISFP
-14	INTP
-15	INFP
+<caption>Mapping followed in the dataset</caption>
+<tr><td>0</td><td>ESTJ</td></tr>
+<tr><td>1</td><td>ENTJ</td></tr>
+<tr><td>2</td><td>ESFJ</td></tr>
+<tr><td>3</td><td>ENFJ</td></tr>
+<tr><td>4</td><td>ISTJ</td></tr>
+<tr><td>5</td><td>ISFJ</td></tr>
+<tr><td>6</td><td>INTJ</td></tr>
+<tr><td>7</td><td>INFJ</td></tr>
+<tr><td>8</td><td>ESTP</td></tr>
+<tr><td>9</td><td>ESFP</td></tr>
+<tr><td>10</td><td>ENTP</td></tr>
+<tr><td>11</td><td>ENFP</td></tr>
+<tr><td>12</td><td>ISTP</td></tr>
+<tr><td>13</td><td>ISFP</td></tr>
+<tr><td>14</td><td>INTP</td></tr>
+<tr><td>15</td><td>INFP</td></tr>
 </table>
