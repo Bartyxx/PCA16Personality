@@ -1,7 +1,7 @@
 
 <table>
-<caption>Columns with more than 50000 zeros.</caption>
-<tr><td>Name of the colum</td> <td>Number of Zeros</td></tr>
+<caption>Columns with more than 50000 zeros</caption>
+<tr><td><b>Name of the colum</b></td> <td><b>Number of Zeros</b></td></tr>
 <tr><td>You regularly make new friends.                                                                             </td><td>51981</td></tr>
 <tr><td>You spend a lot of your free time exploring various random topics that pique your interest                  </td><td>52021</td></tr>
 <tr><td>You are very sentimental.                                                                                   </td><td>51905</td></tr>
