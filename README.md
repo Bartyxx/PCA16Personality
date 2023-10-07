@@ -23,6 +23,7 @@
 </table>
 
 <table>
+<caption>Explenation of the personality type</caption>
 <tr><td>ESTJ</td><td>The Supervisor</td></tr>
 <tr><td>ENTJ</td><td>The Commander </td></tr>
 <tr><td>ESFJ</td><td>The Provider  </td></tr>
@@ -44,7 +45,7 @@
 
 
 <table>
-<caption>Mapping followed in the dataset</caption>
+<caption>Mapping in the dataset</caption>
 <tr><td>0</td><td>ESTJ</td></tr>
 <tr><td>1</td><td>ENTJ</td></tr>
 <tr><td>2</td><td>ESFJ</td></tr>
