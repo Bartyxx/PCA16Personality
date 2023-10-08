@@ -2,9 +2,7 @@
 
 <i>main.py</i> --> Code used for realize the project.
                   It's divided in two part:
-                  1 - Try different models in the dataset, the models are:<br/>
-         
-                                                                          PCA
+                  1 - Try different models in the dataset, the models are:<br/>                                                     
                   2 - MyPCA, in this case I am removing all the columns that have more than 50.000 zeros and repeat all the models for see the difference.
                   <table>
                                                                          <tr><td>KNN, k + 3</td> <td>98.84%</td></tr>
