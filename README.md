@@ -22,7 +22,7 @@ Every rows rapresent a users that take the test, the possible answer to every qu
 
 
 <p><img src="E:\Python\GitHub\Da caricare\ML_esame_personality\Immagini\Test della Personalità gratis _ 16Personalities - Google Chrome 02_07_2022 21_50_49.png" width = "1000px" height="500px"/></p>
-<p><img src="E:\Python\GitHub\Da caricare\ML_esame_personality\Immagini\Figure_1.1.png" width = "1000px" height="500px" align="center" alt = "try"/></p>
+<p><img src="https://github.com/Bartyxx/PCA16Personality/blob/main/Figure_1.2.png" width = "1000px" height="500px" align="center" alt = "try"/></p>
 
 <h1>File</h1><br/>
 
