@@ -1,3 +1,4 @@
+<body>
 <h1>Data</h1><br/>
 <i>data/16P.csv</i> --> Dataset used for the following analysis, downloaded at: 'https://www.kaggle.com/datasets/anshulmehtakaggl/60k-responses-of-16-personalities-test-mbt'.<br/>
 The dataset is base on the sixteen personality test. Available online after answer a series of question the test divide the users in one of the sixteen personality. 
@@ -135,3 +136,4 @@ Every rows rapresent a users that take the test, the possible answer to every qu
 <tr><td>14                       </td><td>INTP                            </td></tr>
 <tr><td>15                       </td><td>INFP                            </td></tr>
 </table>
+</body>
