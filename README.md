@@ -1,12 +1,13 @@
 <h1>File</h1><br/>
 <i>main.py</i><br/>
-<i>function.py</i><br/>
+<i>function.py</i><br/> --> Contain the <i>count_unique</i> function wich is used for count the number of answer of every type. The answer that have more than 50.000 zeros are repoorted and after 
+                            removed. The <i>count_unique</i> is imported in <i>main.py</i>.
 
 <i>columns.py</i> --> Contain three variables: <br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>columns</b>           : Contain all the columns of the dataset.<br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>drop_columns</b>      : Columns droppend, the one with more than 50.000 zeros.<br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>non_drop_columns</b>  : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
-            drop_columns and non_drop_columns are importend and use in: "<i>main.py</i>".<br/>
+                     drop_columns and non_drop_columns are importend and use in: "<i>main.py</i>".<br/>
 
 
 
