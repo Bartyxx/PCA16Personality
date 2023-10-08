@@ -151,3 +151,8 @@ Dataset changes:<br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>drop_columns</b>      : Columns droppend, the one with more than 50.000 zeros.<br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>non_drop_columns</b>  : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
                      drop_columns and non_drop_columns are importend and use in: "<ins>main.py</ins>".<br/>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<h1>Result</h1>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+Insert the plot here
