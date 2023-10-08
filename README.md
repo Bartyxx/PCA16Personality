@@ -20,6 +20,7 @@ Every rows rapresent a users that take the test, the possible answer to every qu
 </table>
 
 <img src="E:\Python\GitHub\Da caricare\ML_esame_personality\Immagini\Test della Personalità gratis _ 16Personalities - Google Chrome 02_07_2022 21_50_49.png">
+![Test della Personalità gratis _ 16Personalities - Google Chrome 02_07_2022 21_50_49](https://github.com/Bartyxx/PCA16Personality/assets/145768376/e007ba61-5984-4fa8-8be9-7ea6d3c204e2)
 
 <h1>File</h1><br/>
 
