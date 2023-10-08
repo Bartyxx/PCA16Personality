@@ -2,7 +2,7 @@
 
 <i>main.py</i> --> Code used for realize the project.
                   It's divided in two part:
-                  1 - Try different models in the dataset, the models are:
+                  1 - Try different models in the dataset, the models are:<br/>
                                                                           <table>
                                                                           <tr><td>KNN, k = 3                   </td><td> 98.80777777777777% </td></tr>
                                                                           <tr><td>KNN, k = 5                   </td><td> 98.93777777777778% </td></tr>
