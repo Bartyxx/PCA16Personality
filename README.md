@@ -1,5 +1,31 @@
 <h1>File</h1><br/>
-<b><i>main.py</i></b><br/>
+
+<i>main.py</i> --> Code used for realize the project.
+                  It's divided in two part:
+                  1 - Try different models in the dataset, the models are:
+                                                                          KNN, k = 3 98.80777777777777%
+                                                                          KNN, k = 5 98.93777777777778%
+                                                                          KNN, k = 7 98.94777777777777%
+                                                                          Linear SVM 94.71000000000001%
+                                                                          Non linear SVM 98.851% 
+                                                                          Neural Network with 10 layers 91%
+                                                                          PCA
+                  2 - MyPCA, in this case I am removing all the columns that have more than 50.000 zeros and repeat all the models for see the difference.
+                                                                          KNN, k + 3 98.84%
+                                                                          KNN, k = 5 98.92%
+                                                                          KNN, k = 7 98.94%
+                                                                          Linear SVM 95.07%
+                                                                          Non linear SVM 98.91%
+                                                                          Neural Network with 10 layers 90%
+
+
+
+
+
+
+
+
+                  
 <i>function.py</i> --> Contain the "<ins>count_unique</ins>" function wich is used for count the number of answer of every type. The answer that have more than 50.000 zeros are repoorted and after 
                         removed. The "<ins>count_unique</ins>" is imported in "<ins>main.py</ins>".
 
