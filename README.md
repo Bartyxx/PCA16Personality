@@ -13,7 +13,7 @@
                                                                           <tr><td>Linear SVM</td> <td>95.07%</td></tr>
                                                                           <tr><td>Non linear SVM</td> <td>98.91%</td></tr>
                                                                           <tr><td>Neural Network with 10 layers</td> <td>90%</td></tr>\
-                                                                          <table>
+                                                                          </table>
 
 
 
