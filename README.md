@@ -5,14 +5,13 @@
                   1 - Try different models in the dataset, the models are:<br/>   
                   <table>
                   <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
-                  <tr><td>KNN, k = 3                   </td><td> 98.80777777777777%            </td></tr>
-                  <tr><td>KNN, k = 5                   </td><td> 98.93777777777778%            </td></tr>
-                  <tr><td>KNN, k = 7                   </td><td> 98.94777777777777%            </td></tr>
-                  <tr><td>Linear SVM                   </td><td> 94.71000000000001%            </td></tr>
-                  <tr><td>Non linear SVM               </td><td> 98.851%                       </td></tr>
-                  <tr><td>Neural Network with 10 layers</td><td> 91%                           </td></tr>
-                  </table>
-                  
+                  <tr><td>KNN, k = 3                   </td><td> 98.80777777777777%           </td></tr>
+                  <tr><td>KNN, k = 5                   </td><td> 98.93777777777778%           </td></tr>
+                  <tr><td>KNN, k = 7                   </td><td> 98.94777777777777%           </td></tr>
+                  <tr><td>Linear SVM                   </td><td> 94.71000000000001%           </td></tr>
+                  <tr><td>Non linear SVM               </td><td> 98.851%                      </td></tr>
+                  <tr><td>Neural Network with 10 layers</td><td> 91%                          </td></tr>
+                  </table>             
                   2 - MyPCA, in this case I am removing all the columns that have more than 50.000 zeros and repeat all the models for see the difference.
                   <table>
                   <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
