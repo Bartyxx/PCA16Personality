@@ -3,7 +3,7 @@
 <i>function.py</i><br/>
 
 <i>columns.py</i> --> Contain three variables: <br/>
-                                    <b>columns</b>           : Contain all the columns of the dataset.<br/>
+<pre>                                    <b>columns</b>           : Contain all the columns of the dataset.<br/></pre>
                                     <b>drop_columns</b>      : Columns droppend, the one with more than 50.000 zeros.<br/>
                                     <b>non_drop_columns</b>  : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
             drop_columns and non_drop_columns are importend and use in: "<i>main.py</i>".<br/>
