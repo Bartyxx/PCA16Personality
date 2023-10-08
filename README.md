@@ -9,15 +9,16 @@ column[Personality] --> the resultant personality after take the test.
 
 Every rows rapresent a users that take the test, the possible answer to every question are 7, rapresentend with a number in the following way:
 <table>
-<tr><td>Value in the dataset</td><td>Answer in the test</td></tr>
-<tr><td>3</td><td>Strongly Agree</td></tr>
-<tr><td>2</td><td></td>Agree</tr>
-<tr><td>1</td><td></td>Slightly Agree</tr>
-<tr><td>0</td><td></td>Neutral</tr>
-<tr><td>-1</td><td>Slightly Disagree</td></tr>
-<tr><td>-2</td><td>Disagree</td></tr>
-<tr><td>-3</td><td>Strongly Agree</td></tr>
+<tr><td><b>Value in the dataset</b></td><td><b>Answer in the test</b></td></tr>
+<tr><td>3                           </td><td>Strongly Agree          </td></tr>
+<tr><td>2                           </td><td>Agree                   </td></tr>
+<tr><td>1                           </td><td>Slightly Agree          </td></tr>
+<tr><td>0                           </td><td>Neutral                 </td></tr>
+<tr><td>-1                          </td><td>Slightly Disagree       </td></tr>
+<tr><td>-2                          </td><td>Disagree                </td></tr>
+<tr><td>-3                          </td><td>Strongly Agree          </td></tr>
 </table>
+
 <h1>File</h1><br/>
 
 <i>main.py</i> --> Code used for realize the project.
