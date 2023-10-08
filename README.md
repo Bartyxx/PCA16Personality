@@ -19,7 +19,7 @@ Every rows rapresent a users that take the test, the possible answer to every qu
 <tr><td>-3                          </td><td>Strongly Agree          </td></tr>
 </table>
 
-<img src="E:\Python\GitHub\Da caricare\ML_esame_personality\Immagini\Test della Personalità gratis _ 16Personalities - Google Chrome 02_07_2022 21_50_49.png" width="75px" height="95px" align="left" alt="Stemma di Ispra>
+<img src="E:\Python\GitHub\Da caricare\ML_esame_personality\Immagini\Test della Personalità gratis _ 16Personalities - Google Chrome 02_07_2022 21_50_49.png"/>
 
 <h1>File</h1><br/>
 
