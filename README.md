@@ -1,7 +1,7 @@
 <h1>File</h1><br/>
-main.py<br/>
-function.py<br/>
-columns.py --> Contain three variables: <br/>
+<i>main.py</i><br/>
+<i>function.py</i><br/>
+<i>columns.py</i> --> Contain three variables: <br/>
                                     <b>columns</b>           : Contain all the columns of the dataset.<br/>
                                     <b>drop_columns</b>      : Columns droppend, the one with more than 50.000 zeros.<br/>
                                     <b>non_drop_columns</b>  : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
