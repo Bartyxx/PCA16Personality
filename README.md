@@ -3,9 +3,9 @@
 The dataset is base on the sixteen personality test. Available online after answer a series of question the test divide the users in one of the sixteen personality. 
 The dataset is composed by 62 columns and 60.000 rows.<br/>
 The columns are:<br/>
-column[Response_Id] --> progressive id.<br/>
-60 columns of answer --> asnwer of the test.<br/>
-column[Personality] --> the resultant personality after take the test.<br/>
+<b>column[Response_Id]</b> --> progressive id.<br/>
+<b>60 columns of answer</b> --> asnwer of the test.<br/>
+<b>column[Personality]</b> --> the resultant personality after take the test.<br/>
 <br/>
 Every rows rapresent a users that take the test, the possible answer to every question are 7, rapresentend with a number in the following way:<br/>
 <table>
