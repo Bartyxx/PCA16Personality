@@ -1,6 +1,7 @@
 <h1>File</h1><br/>
 <i>main.py</i><br/>
 <i>function.py</i><br/>
+
 <i>columns.py</i> --> Contain three variables: <br/>
                                     <b>columns</b>           : Contain all the columns of the dataset.<br/>
                                     <b>drop_columns</b>      : Columns droppend, the one with more than 50.000 zeros.<br/>
@@ -10,7 +11,7 @@
 
 
 
-
+<br/><br/><br/>
 <table>
 <caption>Columns with more than 50000 zeros</caption>
 <tr><td><b>Name of the colum</b></td> <td><b>Number of Zeros</b></td></tr>
