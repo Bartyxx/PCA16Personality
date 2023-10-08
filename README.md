@@ -3,20 +3,23 @@
 <i>main.py</i> --> Code used for realize the project.
                   It's divided in two part:
                   1 - Try different models in the dataset, the models are:
-                                                                          KNN, k = 3 98.80777777777777%
-                                                                          KNN, k = 5 98.93777777777778%
-                                                                          KNN, k = 7 98.94777777777777%
-                                                                          Linear SVM 94.71000000000001%
-                                                                          Non linear SVM 98.851% 
-                                                                          Neural Network with 10 layers 91%
+                  <table>
+                                                                          <tr><td>KNN, k = 3</td><td> 98.80777777777777%</td></tr>
+                                                                          <tr><td>KNN, k = 5</td><td> 98.93777777777778%</td></tr>
+                                                                          <tr><td>KNN, k = 7</td><td> 98.94777777777777%</td></tr>
+                                                                          <tr><td>Linear SVM</td><td> 94.71000000000001%</td></tr>
+                                                                          <tr><td>Non linear SVM</td><td> 98.851% </td></tr>
+                                                                          <tr><td>Neural Network with 10 layers</td><td> 91%</td></tr>
+                                                                          
+                                                                          </table>
                                                                           PCA
                   2 - MyPCA, in this case I am removing all the columns that have more than 50.000 zeros and repeat all the models for see the difference.
-                                                                          KNN, k + 3 98.84%
-                                                                          KNN, k = 5 98.92%
-                                                                          KNN, k = 7 98.94%
-                                                                          Linear SVM 95.07%
-                                                                          Non linear SVM 98.91%
-                                                                          Neural Network with 10 layers 90%
+                                                                         <tr><td>KNN, k + 3</td> <td>98.84%</td></tr>
+                                                                          <tr><td>KNN, k = 5</td> <td>98.92%</td></tr>
+                                                                          <tr><td>KNN, k = 7</td> <td>98.94%</td></tr>
+                                                                          <tr><td>Linear SVM</td> <td>95.07%</td></tr>
+                                                                          <tr><td>Non linear SVM</td> <td>98.91%</td></tr>
+                                                                          <tr><td>Neural Network with 10 layers</td> <td>90%</td></tr>
 
 
 
