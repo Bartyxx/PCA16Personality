@@ -1,7 +1,7 @@
 <h1>File</h1><br/>
 
 <i>main.py</i> --> Code used for realize the project.
-                  It's divided in two part:
+                  It's divided in two part:<br/>
                   1 - Try different models in the dataset, the models are:<br/>   
                   <table>
                   <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
