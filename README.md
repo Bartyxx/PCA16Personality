@@ -1,13 +1,13 @@
 <h1>Data</h1><br/>
-<i>data/16P.csv</i> --> Dataset used for the following analysis, downloaded at: 'https://www.kaggle.com/datasets/anshulmehtakaggl/60k-responses-of-16-personalities-test-mbt'.
+<i>data/16P.csv</i> --> Dataset used for the following analysis, downloaded at: 'https://www.kaggle.com/datasets/anshulmehtakaggl/60k-responses-of-16-personalities-test-mbt'.<br/>
 The dataset is base on the sixteen personality test. Available online after answer a series of question the test divide the users in one of the sixteen personality. 
-The dataset is composed by 62 columns and 60.000 rows.
-The columns are:
-column[Response_Id] --> progressive id.
-60 columns of answer --> asnwer of the test.
-column[Personality] --> the resultant personality after take the test.
-
-Every rows rapresent a users that take the test, the possible answer to every question are 7, rapresentend with a number in the following way:
+The dataset is composed by 62 columns and 60.000 rows.<br/>
+The columns are:<br/>
+column[Response_Id] --> progressive id.<br/>
+60 columns of answer --> asnwer of the test.<br/>
+column[Personality] --> the resultant personality after take the test.<br/>
+<br/>
+Every rows rapresent a users that take the test, the possible answer to every question are 7, rapresentend with a number in the following way:<br/>
 <table>
 <tr><td><b>Value in the dataset</b></td><td><b>Answer in the test</b></td></tr>
 <tr><td>3                           </td><td>Strongly Agree          </td></tr>
