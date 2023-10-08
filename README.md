@@ -1,3 +1,23 @@
+<h1>Data</h1><br/>
+<i>data/16P.csv</i> --> Dataset used for the following analysis, downloaded at: 'https://www.kaggle.com/datasets/anshulmehtakaggl/60k-responses-of-16-personalities-test-mbt'.
+The dataset is base on the sixteen personality test. Available online after answer a series of question the test divide the users in one of the sixteen personality. 
+The dataset is composed by 62 columns and 60.000 rows.
+The columns are:
+column[Response_Id] --> progressive id.
+60 columns of answer --> asnwer of the test.
+column[Personality] --> the resultant personality after take the test.
+
+Every rows rapresent a users that take the test, the possible answer to every question are 7, rapresentend with a number in the following way:
+<table>
+<tr><td>Value in the dataset</td><td>Answer in the test</td></tr>
+<tr><td>3</td><td>Strongly Agree</td></tr>
+<tr><td>2</td><td></td>Agree</tr>
+<tr><td>1</td><td></td>Slightly Agree</tr>
+<tr><td>0</td><td></td>Neutral</tr>
+<tr><td>-1</td><td>Slightly Disagree</td></tr>
+<tr><td>-2</td><td>Disagree</td></tr>
+<tr><td>-3</td><td>Strongly Agree</td></tr>
+</table>
 <h1>File</h1><br/>
 
 <i>main.py</i> --> Code used for realize the project.
