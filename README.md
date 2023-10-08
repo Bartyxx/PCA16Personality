@@ -1,5 +1,5 @@
 <h1>File</h1><br/>
-<i><b>main.py</b></i><br/>
+<b><i>main.py</i></b><br/>
 <i>function.py</i> --> Contain the "<ins>count_unique</ins>" function wich is used for count the number of answer of every type. The answer that have more than 50.000 zeros are repoorted and after 
                         removed. The "<ins>count_unique</ins>" is imported in "<ins>main.py</ins>".
 
