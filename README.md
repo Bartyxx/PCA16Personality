@@ -2,9 +2,9 @@
 Main<br/>
 Function<br/>
 Columns --> Contain three variables: <br/>
-                                    columns          : Contain all the columns of the dataset.<br/>
-                                    drop_columns     : Columns droppend, the one with more than 50.000 zeros.<br/>
-                                    non_drop_columns : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
+                                    <b>columns<b/>           : Contain all the columns of the dataset.<br/>
+                                    <b>drop_columns<b/>      : Columns droppend, the one with more than 50.000 zeros.<br/>
+                                    <b>non_drop_columns<b/>  : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
             drop_columns and non_drop_columns are importend and use in: "main.py".<br/>
 
 
