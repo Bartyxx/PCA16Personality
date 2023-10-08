@@ -1,97 +1,9 @@
-<body>
-<h1>Data</h1><br/>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<h1>Reference</h1><br/>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <i>data/16P.csv</i> --> Dataset used for the following analysis, downloaded at: 'https://www.kaggle.com/datasets/anshulmehtakaggl/60k-responses-of-16-personalities-test-mbt'.<br/>
-The dataset is base on the sixteen personality test. Available online after answer a series of question the test divide the users in one of the sixteen personality. 
-The dataset is composed by 62 columns and 60.000 rows.<br/>
-The columns are:<br/>
-<b>column[Response_Id]</b> --> progressive id.<br/>
-<b>60 columns of answer</b> --> asnwer of the test.<br/>
-<b>column[Personality]</b> --> the resultant personality after take the test.<br/>
+The dataset is base on the sixteen personality test. Available here(https://www.16personalities.com/) after answer a series of question the test divide the users in one of the sixteen personality.<br/>
 <br/>
-Every rows rapresent a users that take the test, the possible answer to every question are 7, rapresentend with a number in the following way:<br/>
-<table>
-<tr><td><b>Value in the dataset</b></td><td><b>Answer in the test</b></td></tr>
-<tr><td>3                           </td><td>Strongly Agree          </td></tr>
-<tr><td>2                           </td><td>Agree                   </td></tr>
-<tr><td>1                           </td><td>Slightly Agree          </td></tr>
-<tr><td>0                           </td><td>Neutral                 </td></tr>
-<tr><td>-1                          </td><td>Slightly Disagree       </td></tr>
-<tr><td>-2                          </td><td>Disagree                </td></tr>
-<tr><td>-3                          </td><td>Strongly Agree          </td></tr>
-</table>
-
-
-<p><img src="E:\Python\GitHub\Da caricare\ML_esame_personality\Immagini\Test della Personalità gratis _ 16Personalities - Google Chrome 02_07_2022 21_50_49.png" width = "1000px" height="500px"/></p>
-<p><img src="https://github.com/Bartyxx/PCA16Personality/blob/main/Figure_1.2.png" width = "1000px" height="500px" align="center" alt = "try"/></p>
-
-<h1>File</h1><br/>
-
-<i>main.py</i> --> Code used for realize the project.
-                  It's divided in two part:<br/>
-                  1 - Try different models in the dataset, the models are:<br/>   
-                  <table>
-                  <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
-                  <tr><td>KNN, k = 3                   </td><td> 98.80777777777777%           </td></tr>
-                  <tr><td>KNN, k = 5                   </td><td> 98.93777777777778%           </td></tr>
-                  <tr><td>KNN, k = 7                   </td><td> 98.94777777777777%           </td></tr>
-                  <tr><td>Linear SVM                   </td><td> 94.71000000000001%           </td></tr>
-                  <tr><td>Non linear SVM               </td><td> 98.851%                      </td></tr>
-                  <tr><td>Neural Network with 10 layers</td><td> 91%                          </td></tr>
-                  </table>             
-                  2 - MyPCA, in this case I am removing all the columns that have more than 50.000 zeros and repeat all the models for see the difference.
-                  <table>
-                  <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
-                  <tr><td>KNN, k + 3                   </td><td>98.84%                        </td></tr>
-                  <tr><td>KNN, k = 5                   </td><td>98.92%                        </td></tr>
-                  <tr><td>KNN, k = 7                   </td><td>98.94%                        </td></tr>
-                  <tr><td>Linear SVM                   </td><td>95.07%                        </td></tr>
-                  <tr><td>Non linear SVM               </td><td>98.91%                        </td></tr>
-                  <tr><td>Neural Network with 10 layers</td><td>90%                           </td></tr>
-                  </table>
-
-
-
-
-
-
-
-
-                  
-<i>function.py</i> --> Contain the "<ins>count_unique</ins>" function wich is used for count the number of answer of every type. The answer that have more than 50.000 zeros are repoorted and after 
-                        removed. The "<ins>count_unique</ins>" is imported in "<ins>main.py</ins>".
-
-<i>columns.py</i> --> Contain three variables: <br/>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>columns</b>           : Contain all the columns of the dataset.<br/>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>drop_columns</b>      : Columns droppend, the one with more than 50.000 zeros.<br/>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>non_drop_columns</b>  : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
-                     drop_columns and non_drop_columns are importend and use in: "<ins>main.py</ins>".<br/>
-
-
-
-
-<br/><br/><br/>
-<table>
-<caption>Columns with more than 50000 zeros</caption>
-<tr><td><b>Name of the colum</b></td> <td><b>Number of Zeros</b></td></tr>
-<tr><td>You regularly make new friends.                                                                             </td><td>51981</td></tr>
-<tr><td>You spend a lot of your free time exploring various random topics that pique your interest                  </td><td>52021</td></tr>
-<tr><td>You are very sentimental.                                                                                   </td><td>51905</td></tr>
-<tr><td>Even a small mistake can cause you to doubt your overall abilities and knowledge.                           </td><td>51902</td></tr>
-<tr><td>You avoid leadership roles in group settings.                                                               </td><td>51945</td></tr>
-<tr><td>You think the world would be a better place if people relied more on rationality and less on their feelings.</td><td>51942</td></tr>
-<tr><td>You prefer to do your chores before allowing yourself to relax.                                             </td><td>51873</td></tr>
-<tr><td>You lose patience with people who are not as efficient as you.                                              </td><td>51971</td></tr>
-<tr><td>You become bored or lose interest when the discussion gets highly theoretical.                              </td><td>51815</td></tr>
-<tr><td>You usually postpone finalizing decisions for as long as possible.                                          </td><td>52080</td></tr>
-<tr><td>You rarely contemplate the reasons for human existence or the meaning of life.                              </td><td>51999</td></tr>
-<tr><td>You take great care not to make people look bad, even when it is completely their fault.                    </td><td>51952</td></tr>
-<tr><td>When someone thinks highly of you, you wonder how long it will take them to feel disappointed in you.       </td><td>51982</td></tr>
-<tr><td>You would love a job that requires you to work alone most of the time.                                      </td><td>51986</td></tr>
-<tr><td>You believe that pondering abstract philosophical questions is a waste of time.                             </td><td>51891</td></tr>
-<tr><td>You know at first glance how someone is feeling.                                                            </td><td>51939</td></tr>
-<tr><td>You complete things methodically without skipping over any steps.                                           </td><td>52023</td></tr>
-<tr><td>You are very intrigued by things labeled as controversial.                                                  </td><td>51858</td></tr>
-</table>
 
 <table>
 <caption>Explenation of the personality type</caption>
@@ -114,7 +26,51 @@ Every rows rapresent a users that take the test, the possible answer to every qu
 <tr><td>INFP               </td><td>The Idealist  </td></tr>
 </table>
 
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<h1>Data</h1>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+The dataset is composed by 62 columns and 60.000 rows.<br/>
+The columns are:<br/>
+<b>column[Response_Id] </b> --> progressive id.                               <br/>
+<b>60 columns of answer</b> --> asnwer of the test.                           <br/>
+<b>column[Personality ]</b> --> the resultant personality after take the test.<br/>
+<br/>
+<table>
+<tr><td><b>Response Id</b></td> 
+    <td><b>You regularly make new friends.	</b></td>
+    <td><b>You are very sentimental.</b></td> 
+    <td><b>You enjoy participating in group activities.</b>	</td>
+    <td>...</td> 
+    <td><b>You struggle with deadlines.</b>	</td>
+    <td><b>You feel confident that things will work out for you.</b></td>
+    <td><b>Personality</b></td>
+                               </tr> 
+<tr><td>0</td><td>0</td><td>0</td><td>-1</td><td></td><td>0 </td><td>0</td><td>ENFP</td></tr>
+<tr><td>1</td><td>0</td><td>0</td><td>-2</td><td></td><td>-1</td><td>3</td><td>ISFP</td></tr>
+<tr><td>2</td><td>0</td><td>0</td><td>2 </td><td></td><td>2 </td><td>1</td><td>INFJ</td></tr>
+</table>
 
+Every rows rapresent a users that take the test, the possible answer to every question are 7, rapresentend with a number in the following way:<br/>
+<table>
+<tr><td><b>Value in the dataset</b></td><td><b>Answer in the test</b></td></tr>
+<tr><td>3                           </td><td>Strongly Agree          </td></tr>
+<tr><td>2                           </td><td>Agree                   </td></tr>
+<tr><td>1                           </td><td>Slightly Agree          </td></tr>
+<tr><td>0                           </td><td>Neutral                 </td></tr>
+<tr><td>-1                          </td><td>Slightly Disagree       </td></tr>
+<tr><td>-2                          </td><td>Disagree                </td></tr>
+<tr><td>-3                          </td><td>Strongly Agree          </td></tr>
+</table>
+<br/><br/>
+One question in the test:<br/>
+<p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/personality_test_answer.png"/></p>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<h1>Data Modeling</h1>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+Dataset changes:<br/>
+1 - Remove the column [Response Id]<br/>
+2 - Code the column [Personality] from <i>str</i> to <i>integer</i> for use the ML models.<br/>
 
 <table>
 <caption>Mapping in the dataset</caption>
@@ -136,4 +92,62 @@ Every rows rapresent a users that take the test, the possible answer to every qu
 <tr><td>14                       </td><td>INTP                            </td></tr>
 <tr><td>15                       </td><td>INFP                            </td></tr>
 </table>
-</body>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<h1>File</h1>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<i>main.py</i> --> Code used for realize the project.
+                  It's divided in two part:<br/>
+                  1 - Try different models in the dataset, the models are:
+                  <table>
+                  <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
+                  <tr><td>KNN, k = 3                   </td><td> 98.80777777777777%           </td></tr>
+                  <tr><td>KNN, k = 5                   </td><td> 98.93777777777778%           </td></tr>
+                  <tr><td>KNN, k = 7                   </td><td> 98.94777777777777%           </td></tr>
+                  <tr><td>Linear SVM                   </td><td> 94.71000000000001%           </td></tr>
+                  <tr><td>Non linear SVM               </td><td> 98.851%                      </td></tr>
+                  <tr><td>Neural Network with 10 layers</td><td> 91%                          </td></tr>
+                  </table>             
+                  2 - MyPCA, in this case I am removing all the columns that have more than 50.000 zeros and repeat all the models for see the difference.<br/><br/>
+                  <table>
+                  <caption>Columns with more than 50000 zeros are</caption>
+                  <tr><td><b>Name of the colum</b></td> <td><b>Number of Zeros</b></td></tr>
+                  <tr><td>You regularly make new friends.                                                                             </td><td>51981</td></tr>
+                  <tr><td>You spend a lot of your free time exploring various random topics that pique your interest                  </td><td>52021</td></tr>
+                  <tr><td>You are very sentimental.                                                                                   </td><td>51905</td></tr>
+                  <tr><td>Even a small mistake can cause you to doubt your overall abilities and knowledge.                           </td><td>51902</td></tr>
+                  <tr><td>You avoid leadership roles in group settings.                                                               </td><td>51945</td></tr>
+                  <tr><td>You think the world would be a better place if people relied more on rationality and less on their feelings.</td><td>51942</td></tr>
+                  <tr><td>You prefer to do your chores before allowing yourself to relax.                                             </td><td>51873</td></tr>
+                  <tr><td>You lose patience with people who are not as efficient as you.                                              </td><td>51971</td></tr>
+                  <tr><td>You become bored or lose interest when the discussion gets highly theoretical.                              </td><td>51815</td></tr>
+                  <tr><td>You usually postpone finalizing decisions for as long as possible.                                          </td><td>52080</td></tr>
+                  <tr><td>You rarely contemplate the reasons for human existence or the meaning of life.                              </td><td>51999</td></tr>
+                  <tr><td>You take great care not to make people look bad, even when it is completely their fault.                    </td><td>51952</td></tr>
+                  <tr><td>When someone thinks highly of you, you wonder how long it will take them to feel disappointed in you.       </td><td>51982</td></tr>
+                  <tr><td>You would love a job that requires you to work alone most of the time.                                      </td><td>51986</td></tr>
+                  <tr><td>You believe that pondering abstract philosophical questions is a waste of time.                             </td><td>51891</td></tr>
+                  <tr><td>You know at first glance how someone is feeling.                                                            </td><td>51939</td></tr>
+                  <tr><td>You complete things methodically without skipping over any steps.                                           </td><td>52023</td></tr>
+                  <tr><td>You are very intrigued by things labeled as controversial.                                                  </td><td>51858</td></tr>
+                  </table>
+                  <table>
+                  <caption>Accuracy after MyPca</caption>
+                  <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
+                  <tr><td>KNN, k + 3                   </td><td>98.84%                        </td></tr>
+                  <tr><td>KNN, k = 5                   </td><td>98.92%                        </td></tr>
+                  <tr><td>KNN, k = 7                   </td><td>98.94%                        </td></tr>
+                  <tr><td>Linear SVM                   </td><td>95.07%                        </td></tr>
+                  <tr><td>Non linear SVM               </td><td>98.91%                        </td></tr>
+                  <tr><td>Neural Network with 10 layers</td><td>90%                           </td></tr>
+                  </table>
+
+                  
+<i>function.py</i> --> Contain the "<ins>count_unique</ins>" function wich is used for count the number of answer of every type. The answer that have more than 50.000 zeros are repoorted and after 
+                        removed. The "<ins>count_unique</ins>" is imported in "<ins>main.py</ins>".
+
+<i>columns.py</i> --> Contain three variables: <br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>columns</b>           : Contain all the columns of the dataset.<br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>drop_columns</b>      : Columns droppend, the one with more than 50.000 zeros.<br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>non_drop_columns</b>  : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
+                     drop_columns and non_drop_columns are importend and use in: "<ins>main.py</ins>".<br/>
