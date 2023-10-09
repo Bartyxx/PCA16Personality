@@ -134,7 +134,7 @@ Dataset changes:<br/>
                   <table>
                   <caption>Accuracy after MyPca</caption>
                   <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
-                  <tr><td>KNN, k + 3                   </td><td>98.84%                        </td></tr>
+                  <tr><td>KNN, k = 3                   </td><td>98.84%                        </td></tr>
                   <tr><td>KNN, k = 5                   </td><td>98.92%                        </td></tr>
                   <tr><td>KNN, k = 7                   </td><td>98.94%                        </td></tr>
                   <tr><td>Linear SVM                   </td><td>95.07%                        </td></tr>
@@ -155,4 +155,15 @@ Dataset changes:<br/>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <h1>Result</h1>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-Insert the plot here
+
+Accuracy of the models, they all are above 90%, the higher is the KNN k = 7.<br/>
+<p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/accuracy_10attempts.png"/></p>
+
+Accuracy removing columns, it's nearby the higher considering 30 columns but even after considering only 10 columns is accettable.<br/>
+<p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/%25accuracy.png"/></p>
+
+The information became significant when 42 columns are considered, that is what we were expecting considering that after I am removing 18 columns.(The dataset is composed by 60 columns, 42 + 18.)<br/>
+<p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/%25information.png"/></p>
+
+Accuracy after MyPca(removing 18 columns), it's nearby the same of the first models, on avarege it's nearby -2% so it's accettable remove those columns.<br/>
+<p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/accuracy_after_PCA.png"/></p>
