@@ -162,7 +162,7 @@ Accuracy of the models, they all are above 90%, the higher is the KNN k = 7.<br/
 Accuracy removing columns, it's nearby the higher considering 30 columns but even after considering only 10 columns is accettable.<br/>
 <p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/%25accuracy.png"/></p>
 
-The information became significant when 42 columns are considered, that is what we were expecting considering that after I am removing 18 columns.(The dataset is composed by 60 columns, 42 + 18.)<br/>
+The information became significant when 42 columns are considered, that is what we were expecting considering that after I removed 18 columns.(The dataset is composed by 60 columns, 42 + 18.)<br/>
 <p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/%25information.png"/></p>
 
 Accuracy after MyPca(removing 18 columns), it's nearby the same of the first models, on avarege it's nearby -2% so it's accettable remove those columns.<br/>
