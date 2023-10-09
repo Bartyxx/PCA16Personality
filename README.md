@@ -29,7 +29,7 @@ The dataset is base on the sixteen personality test. Available here(https://www.
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <h1>Data</h1>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
-The dataset is composed by 62 columns and 60.000 rows.<br/>
+The dataset is composed by 62 columns and 59.999 rows.<br/>
 The columns are:<br/>
 <b>column[Response_Id] </b> --> progressive id.                               <br/>
 <b>60 columns of answer</b> --> asnwer of the test.                           <br/>
