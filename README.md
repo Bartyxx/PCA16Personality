@@ -2,7 +2,7 @@
 <h1>Reference</h1><br/>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <i>data/16P.csv</i> --> Dataset used for the following analysis, downloaded at: 'https://www.kaggle.com/datasets/anshulmehtakaggl/60k-responses-of-16-personalities-test-mbt'.<br/>
-The dataset is base on the sixteen personality test. Available here(https://www.16personalities.com/) after answer a series of question the test divide the users in one of the sixteen personality.<br/>
+The dataset is based on the sixteen personality tests. Available here(https://www.16personalities.com/) after answering a series of questions the test divides the users into one of the sixteen personalities.<br/>
 <br/>
 
 <table>
@@ -50,7 +50,7 @@ The columns are:<br/>
 <tr><td>2</td><td>0</td><td>0</td><td>2 </td><td></td><td>2 </td><td>1</td><td>INFJ</td></tr>
 </table>
 
-Every rows rapresent a users that take the test, the possible answer to every question are 7, rapresentend with a number in the following way:<br/>
+Every row represents one user that take the test, and the possible answer to every questions is 7, represented with a number in the following way:<br/>
 <table>
 <tr><td><b>Value in the dataset</b></td><td><b>Answer in the test</b></td></tr>
 <tr><td>3                           </td><td>Strongly Agree          </td></tr>
@@ -97,7 +97,7 @@ Dataset changes:<br/>
 <h1>File</h1>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <i>main.py</i> --> Code used for realize the project.
-                  It's divided in two part:<br/>
+                  It's divided into two parts:<br/>
                   1 - Try different models in the dataset, the models are:
                   <table>
                   <tr><td><b>Model</b>                 </td><td><b>Accuracy on 10 attempts</b></td></tr>
@@ -108,7 +108,7 @@ Dataset changes:<br/>
                   <tr><td>Non linear SVM               </td><td> 98.851%                      </td></tr>
                   <tr><td>Neural Network with 10 layers</td><td> 91%                          </td></tr>
                   </table>             
-                  2 - MyPCA, in this case I am removing all the columns that have more than 50.000 zeros and repeat all the models for see the difference.<br/><br/>
+                  2 - MyPCA, in this case, I am removing all the columns that have more than 50.000 zeros and repeating all the models to see the difference.<br/><br/>
                   <table>
                   <caption>Columns with more than 50000 zeros are</caption>
                   <tr><td><b>Name of the colum</b></td> <td><b>Number of Zeros</b></td></tr>
@@ -129,7 +129,7 @@ Dataset changes:<br/>
                   <tr><td>You believe that pondering abstract philosophical questions is a waste of time.                             </td><td>51891</td></tr>
                   <tr><td>You know at first glance how someone is feeling.                                                            </td><td>51939</td></tr>
                   <tr><td>You complete things methodically without skipping over any steps.                                           </td><td>52023</td></tr>
-                  <tr><td>You are very intrigued by things labeled as controversial.                                                  </td><td>51858</td></tr>
+                  <tr><td>You are very intrigued by things labelled as controversial.                                                  </td><td>51858</td></tr>
                   </table>
                   <table>
                   <caption>Accuracy after MyPca</caption>
@@ -143,27 +143,27 @@ Dataset changes:<br/>
                   </table>
 
                   
-<i>function.py</i> --> Contain the "<ins>count_unique</ins>" function wich is used for count the number of answer of every type. The answer that have more than 50.000 zeros are repoorted and after 
-                        removed. The "<ins>count_unique</ins>" is imported in "<ins>main.py</ins>".
+<i>function.py</i> --> Contain the "<ins>count_unique</ins>" function which is used to count the number of answers of every type. The answers that have more than 50.000 zeros are reported and removed.
+                       The "<ins>count_unique</ins>" is imported in "<ins>main.py</ins>".
 
 <i>columns.py</i> --> Contain three variables: <br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>columns</b>           : Contain all the columns of the dataset.<br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>drop_columns</b>      : Columns droppend, the one with more than 50.000 zeros.<br/>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>non_drop_columns</b>  : The remaining 42 columns, used for calculare the accuracy with the different model after the removal of the drop_columns.<br/>
-                     drop_columns and non_drop_columns are importend and use in: "<ins>main.py</ins>".<br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>non_drop_columns</b>  : The remaining 42 columns, used for calculate the accuracy with the different model after the removal of the drop_columns.<br/>
+                     drop_columns and non_drop_columns are imported and use in: "<ins>main.py</ins>".<br/>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <h1>Result</h1>
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
-Accuracy of the models, they all are above 90%, the higher is the KNN k = 7.<br/>
+Accuracy of the models, they all above 90%, the higher is the KNN k = 7.<br/>
 <p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/accuracy_10attempts.png"/></p>
 
-Accuracy removing columns, it's nearby the higher considering 30 columns but even after considering only 10 columns is accettable.<br/>
+Accuracy removing columns, it's nearly higher considering 30 columns but even after considering only 10 columns is acceptable.<br/>
 <p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/%25accuracy.png"/></p>
 
-The information became significant when 42 columns are considered, that is what we were expecting considering that after I removed 18 columns.(The dataset is composed by 60 columns, 42 + 18.)<br/>
+The information became significant when 42 columns were considered, that is what we were expecting considering that after I removed 18 columns. (The dataset is composed of 60 columns, 42 + 18.)<br/>
 <p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/%25information.png"/></p>
 
-Accuracy after MyPca(removing 18 columns), it's nearby the same of the first models, on avarege it's nearby -2% so it's accettable remove those columns.<br/>
+Accuracy after MyPca(removing 18 columns), it's nearly the same as the first models, on average it's nearly -2% so it's acceptable to remove those columns.<br/>
 <p><img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/accuracy_after_PCA.png"/></p>
