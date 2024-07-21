@@ -48,18 +48,18 @@ All the columns contain every value, they didn't have any missing values.
 """
 
 if __name__ == "__main__":
-    '''
+    """
     ---------------------------------------------------------------------------
                       TASK 1: Import and Create the datasets.
     ---------------------------------------------------------------------------
     Creation of a Pandas datasets from the 
     Kaggle CSV file
     ---------------------------------------------------------------------------
-                                                                            '''
+    """
     ds = pd.read_csv('./data/16p.csv', sep=',', encoding='cp1252', low_memory=False)
 
 
-    '''
+    """
     ---------------------------------------------------------------------------
                               TASK 2: Divide y and x.
     ---------------------------------------------------------------------------
@@ -67,19 +67,19 @@ if __name__ == "__main__":
     ID(useless for our purpose from the features. Assign Personality columns 
     to the variable y.
     ---------------------------------------------------------------------------   
-                                                                            '''
+    """
     y = ds['Personality'].values
     x = ds.drop(columns=['Personality', 'Response Id']).values
 
 
-    '''
+    """
     ---------------------------------------------------------------------------
                        TASK 3: Normalization of the labels
     ---------------------------------------------------------------------------
     Find the unique value on the y columns, then with the for cycle change 
     every value with a progressive numerical value.
     ---------------------------------------------------------------------------
-                                                                            '''
+    """
     print('classes & distribution: ', np.unique(y, return_counts=True),'\n')
     label_names = np.unique(y)
     for i, label in enumerate(label_names):
@@ -88,7 +88,7 @@ if __name__ == "__main__":
     y = y.astype(int)
 
 
-    '''
+    """
     ---------------------------------------------------------------------------
                                TASK 4: x and y split.
     ---------------------------------------------------------------------------
@@ -96,18 +96,18 @@ if __name__ == "__main__":
                                                              test_size  -> 30%
                                                              train_size -> 70%
     ---------------------------------------------------------------------------
-                                                                            '''
+    """
     x_train, x_test, y_train, y_test = train_test_split(x,
                                                         y,
                                                         test_size=0.3)
 
-    '''
+    """
     ---------------------------------------------------------------------------
                                    TASK 5:  KNN
     ---------------------------------------------------------------------------
     Calculate the KNN.
     ---------------------------------------------------------------------------     
-                                                                            '''
+    """
     KNN = KNeighborsClassifier(n_neighbors=7)
     KNN.fit(x_train, y_train)
     KNN_y_pred = KNN.predict(x_test)
@@ -127,13 +127,13 @@ if __name__ == "__main__":
     ax.set_facecolor('lightskyblue')
     plt.show()
 
-    '''
+    """
     ---------------------------------------------------------------------------
                          TASK 6: Linear and Non Linear SVM.
     ---------------------------------------------------------------------------
     Calculate the SVM with linear and non linear kernel.
     ---------------------------------------------------------------------------                                  
-                                                                            '''
+    """
     SVML = SVC(kernel='linear')
     SVML.fit(x_train, y_train)
     SVML_y_pred = SVML.predict(x_test)
@@ -146,13 +146,13 @@ if __name__ == "__main__":
     accuracySVMNL = np.mean(y_test == SVMNL_y_pred)
     print(f'--> Non Linear SVM Accuracy: {100 * accuracySVMNL: .2f}%\n')
 
-    '''
+    """
     ---------------------------------------------------------------------------
     TASK 7: NEURAL NETWORK
     ---------------------------------------------------------------------------
     Neural Network Implementation with 10 layers: 
     ---------------------------------------------------------------------------
-                                                                            '''
+    """
     y_train = to_categorical(y_train)
     model = keras.Sequential(layers=[
          Dense(units=15, activation="relu", input_dim=60),
@@ -183,7 +183,7 @@ if __name__ == "__main__":
                                                                   random_state=42)
 
 
-    '''
+    """
     ---------------------------------------------------------------------------
                        TASK 8: Principal Component Analysis.
     ---------------------------------------------------------------------------
@@ -193,18 +193,19 @@ if __name__ == "__main__":
                                            Numbers of columns and information_loss.
                                            Numbers of columns and accuracies.
     ---------------------------------------------------------------------------
-    '''
+    """
     accuracies = []
     information_loss = []
     colonne = []
     
-    '''
+    """
     ---------------------------------------------------------------------------
                                    TASK 9: My PCA
     ---------------------------------------------------------------------------
     Calculate the columns with more than 50000 zeros and remove from the 
     DataFrame
-    ---------------------------------------------------------------------------'''
+    ---------------------------------------------------------------------------
+    """
     for components in range(1, x_train_orig.shape[1]):
          print(f'N components: {components}')
     
@@ -269,14 +270,14 @@ if __name__ == "__main__":
         df.pop(i)
      
 
-    '''
+    """
     ---------------------------------------------------------------------------
               LAST TASK: New Model with 42 columns instead of 60.
     ---------------------------------------------------------------------------
     The accuracy is hight nearby 98-98.50 for the KNN and SVM and 90 for the 
     Neural Network.
     ---------------------------------------------------------------------------
-                                                                            '''
+    """
     x2 = df.drop(columns=['Personality', 'Response Id']).values
     y2 = df['Personality'].values
     y2 = y2.astype('int')
@@ -287,7 +288,7 @@ if __name__ == "__main__":
     ---------------------------------------------------------------------------
                                      KNN
     ---------------------------------------------------------------------------
-                                                                            """
+    """
     KNN2 = KNeighborsClassifier(n_neighbors=7)
     KNN2.fit(x_trainsecond, y_trainsecond)
     KNN_y_pred2 = KNN2.predict(x_testsecond)
@@ -297,7 +298,7 @@ if __name__ == "__main__":
     ---------------------------------------------------------------------------
                                  Linear SVM
     ---------------------------------------------------------------------------
-                                                                            """
+    """
     SVMLsecond = SVC(kernel='linear')
     SVMLsecond.fit(x_trainsecond, y_trainsecond)
     SVML_y_predsecond = SVMLsecond.predict(x_testsecond)
@@ -307,7 +308,7 @@ if __name__ == "__main__":
     ---------------------------------------------------------------------------
                                Non linear SVM
     ---------------------------------------------------------------------------
-                                                                            """
+    """
     classifierSVMNLsecond = SVC(kernel='rbf')
     classifierSVMNLsecond.fit(x_trainsecond, y_trainsecond)
     SVMNL_y_predsecond = classifierSVMNLsecond.predict(x_testsecond)
@@ -317,7 +318,7 @@ if __name__ == "__main__":
     ---------------------------------------------------------------------------
                                Neural Network
     ---------------------------------------------------------------------------
-                                                                            """
+    """
     x_trainsecond = np.asarray(x_trainsecond).astype(np.float32)
     y_trainsecond = np.asarray(y_trainsecond).astype(np.float32)
     x_testsecond = np.asarray(x_testsecond).astype(np.float32)
