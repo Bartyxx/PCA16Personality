@@ -1,3 +1,11 @@
+"""
+-------------------------------------------------------------------------------
+                                main.py
+-------------------------------------------------------------------------------
+Calulcate the accuracy of different model on a 16 personality database.
+"""
+
+
 import tensorflow
 import keras
 from keras.utils import to_categorical
