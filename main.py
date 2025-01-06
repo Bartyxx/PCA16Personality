@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------------
                                 main.py
 -------------------------------------------------------------------------------
-Calulcate the accuracy of different model on a 16 personality database.
+Calulcate the accuracy of different model on a 16 personality test database.
 """
 
 
