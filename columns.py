@@ -1,8 +1,12 @@
-'''Columns of the 16 Personality Datasets:
+"""
+-------------------------------------------------------------------------------
+                                    columns.py
+-------------------------------------------------------------------------------
+Columns of the 16 Personality Datasets:
                                           0 ------> Response ID
                                           1-59 ---> Features, answare at the tests.
                                           60 -----> Labels, with 16 different possibility.
-                                          '''
+                                          """
 columns = ['Response Id',
            'You regularly make new friends',
            'You spend a lot of your free time exploring various random topics that pique your interest',
