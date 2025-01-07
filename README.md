@@ -3,7 +3,7 @@
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <div>
     <p align="center" dir="auto">
-        Calulcate the accuracy of various model on a 16 personality test database.
+        Calulcate the accuracy of various models on a 16 personality test database.
     </p>
     <div align="center">
         <img src = "https://github.com/Bartyxx/PCA16Personality/blob/main/image/personalitylogo.png"/>
